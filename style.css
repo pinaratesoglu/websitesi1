@@ -7,8 +7,8 @@ body{
     background-color: whitesmoke;
 }
 #pınar{
-    background-color: black;
-    background-image: url(arkaplan.jpg);
+
+    background-image: url(background.jpeg);
     background-position: right bottom;
     padding: 10px;
     background-size: 100%;
