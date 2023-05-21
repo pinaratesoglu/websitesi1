@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>iletişim sayfası</title>
+    </head>
+    <body id="pınar" >
+     
+          
+        </style>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Pınar Ateşoğlu</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Hakkımda</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="egitim.htm">Eğitim <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="ilkokul.html">İlkokul</a></li>
+          <li><a href="ortaokul.html">ortaokul</a></li>
+          <li><a href="lise.html">lise</a></li>
+          <li><a href="universite.html">Üniversite</a></li>
+        </ul>
+      </li>
+      <li><a href="ankara.html">Ankara</a></li>
+      <li><a href="ilgialanlari.html">İlgi Alanlarım</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="app">
+    <h2>İletişim Formu</h2>
+    <form @submit.prevent="submitForm">
+      <label for="name">Adınız:</label>
+      <input type="text" id="name" v-model="formData.name" required>
+
+      <label for="email">E-posta Adresiniz:</label>
+      <input type="email" id="email" v-model="formData.email" required>
+
+      <label for="phone">Telefon Numaranız:</label>
+      <input type="tel" id="phone" v-model="formData.phone">
+
+      <button type="submit">Gönder</button>
+      <button type="button" @click="resetForm">Sıfırla</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
